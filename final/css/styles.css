@@ -1,0 +1,486 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('../img/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the entire screen */
+    background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+    background-attachment: fixed; /* Makes the image stay fixed during scrolling */
+    background-position: center;
+    
+}
+
+.background-img_ {
+    opacity: 0.5; /* Adjust opacity (0 = transparent, 1 = full) */
+    z-index: 1; /* Place it behind the content */
+}
+
+
+.potta-one-regular {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Global Typography Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    color: #000000;
+}
+
+h2, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Button and CTA Fonts */
+.cta {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Fonts */
+nav ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* Header */
+
+
+header {
+    position: fixed; /* Keeps the header at the top */
+    top: 0; /* Aligns it to the very top of the page */
+    left: 0; /* Aligns it to the left edge */
+    width: 100%; /* Ensures the header spans the full width of the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Background color for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    z-index: 1000; /* Ensures the header stays above other elements */
+    padding: 10px 20px;
+    background-color: #f00f1a;
+    color: #fff;
+}
+body {
+    margin-top: 80px; /* Adjust this to match the header's height */
+}
+header .logo img {
+    height: 50px;
+}
+
+header .brand-name {
+    font-family: "Potta One", system-ui, sans-serif;
+    font-weight: 900;
+    color: #111;
+    font-size: 35px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcccb;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f9f9f9;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #444;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #111;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.content ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Product Section */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+section p {
+    margin: 20px 0;
+}
+
+section .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section .cta:hover {
+    background-color: #444;
+}
+
+/* Three Photo Section */
+.three-photo-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.photo {
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.photo h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.photo p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.photo .cta {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.photo .cta:hover {
+    background-color: darkred;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Forms */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #bf0810;
+}
+
+
+/* Login Form Styles */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form .cta {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form .cta:hover {
+    background-color: darkred;
+}
+
+.signup {
+    text-align: center;
+}
+
+.mainHeading {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+    color: #333;
+    font-weight: 900;
+}
+
+
+/* Products Container */
+.products-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    gap: 20px; /* Adds spacing between items */
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* Individual Product Section */
+.product {
+    flex: 1 1 calc(33.333% - 20px); /* Each item takes 1/3 of the container width */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect for Products */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Images */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Headings and Text */
+.product h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buy Now Button */
+.product .cta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product .cta:hover {
+    background-color: darkred;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Align icons centrally */
+    gap: 50px; /* Spacing between icons */
+    
+}
+
+.social-icons a {
+    color: #333; /* Icon color */
+    font-size: 40px; /* Icon size */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.social-icons a:hover {
+    color: #555; /* Icon color on hover */
+}
+
+.contactus {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    flex-shrink: 0; 
+}
